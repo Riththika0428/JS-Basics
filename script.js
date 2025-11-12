@@ -3,6 +3,7 @@
     
 }
 console.log(x);
+
 {
     lety=70;
     console.log(y);
