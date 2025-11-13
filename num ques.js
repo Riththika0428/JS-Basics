@@ -23,8 +23,10 @@ console.log(typeof(numberValue))
 
 // Clean unwanted characters from a text input like "hello@@world@@!"
 let text = "hello@@world@@!";
-let Text = text.slice(0, 11);
-console.log(`Extracted text: ${Text}`);
+let TextNew = text.replace(/@/g, '');
+console.log(TextNew);
+ 
+
 
 // Format a receipt like:Item: Keyboard Price: Rs 250.00 (padEnd() for alignment
 
