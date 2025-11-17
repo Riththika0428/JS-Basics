@@ -15,33 +15,40 @@ const square = (n) => n*n;
 console.log(square(5));
 
 // Function calling another function
-// function add (a, b){
-//     return a+b;
-// }
-//   function displaysum(3, 5){
-//     const add(3, 5);o
-//   console.log
-//   }
-
-
-
-
-function CalculteSum(salary1, salary2){
-    return salary1+salary2
+    // get 2 salaries as input, add them, and then increase each by 10%
+function SumSalaries(salary1, salary2) {
+return salary1 + salary2;
 }
- function IncreaseSalary(salary){
-    return salary + salary*0.10
- }
-  function showResult(salary1, salary2) {
-  let total = CalculateSum(salary1, salary2);
-  console.log("Total Salary = " + total);
+function bonus(){
+const total = SumSalaries(50000, 75000);
+let bonus=total*0.1
+let totalwithbonus=bonus+total;
+console.log("The total combined salary is: $" + total);
+console.log(totalwithbonus);
+}
+bonus();
 
-  console.log("Salary 1 after 10% increase = " + increaseSalary(salary1));
-  console.log("Salary 2 after 10% increase = " + increaseSalary(salary2));
+// arrow function
+
+const addSalariess = (salary1, salary2) => salary1 + salary2;
+
+const bonuss = () => {
+const totalCombinedSalary = addSalariess(50000, 75000);
+let bonus = totalCombinedSalary * 0.1;
+let totalwithbonus = bonus + totalCombinedSalary;
+console.log("The total combined salary is: $" + totalCombinedSalary);
+console.log(totalwithbonus);
 }
 
-let salary1 = parseFloat(prompt("Enter first salary:"));
-let salary2 = parseFloat(prompt("Enter second salary:"));
+bonuss();
+ 
+
+
+
+
+
+
+
 
 
 
